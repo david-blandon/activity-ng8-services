@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-md-8 col-md-offset-2">
+      <todo-form (todoCreated)="addTodo($event)"></todo-form>
+      <todo
+        *ngFor="let j of todos"
+        [todo]="j"
+        (todoDeleted)="deleteTodo($event)"
+      ></todo>
+      <!--
+Convierta la aplicación Todo en una aplicación que use un servicio para almacenar los [todos].
+
+Ademas crear un token y usarlo en un proveedor que podamos configurar con diferentes valores numericos. Este proveedor debemos inyectarlo en este servicio y asegúrese
+de que el número de [todos] no exceda este valor máximo.
+    --></div>
+  </div>
+</div>

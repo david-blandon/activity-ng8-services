@@ -1,0 +1,13 @@
+<div class="card card-block">
+  <h4 class="card-title">
+  	{{data.title}}
+  </h4>
+  <p class="card-text"
+     [hidden]="data.hide">{{data.description}}</p>
+  <a (click)="data.toggle()"
+     class="btn btn-warning">Detalle
+  </a>
+  <a (click)="deleteItem()"
+     class="btn btn-danger">Eliminar
+  </a>
+</div>

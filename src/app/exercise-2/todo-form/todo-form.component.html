@@ -1,0 +1,19 @@
+<div class="card card-block">
+  <h4 class="card-title">Crear Todo</h4>
+  <div class="form-group">
+    <input type="text"
+           class="form-control"
+           placeholder="Ingresa el titulo"
+           #title>
+  </div>
+  <div class="form-group">
+    <input type="text"
+           class="form-control"
+           placeholder="Ingresa la descripción"
+           #description>
+  </div>
+  <button type="button"
+          class="btn btn-primary"
+          (click)="createTodo(title.value, description.value)">Crear
+  </button>
+</div>
